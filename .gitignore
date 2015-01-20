@@ -1,7 +1,9 @@
 *
 !.vimrc
 !.bashrc
+!.zshrc
 !.tmux.conf
+!my_bureau.zsh-theme
 
 !.gitignore
 !README.markdown

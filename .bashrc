@@ -56,10 +56,6 @@ else
 fi
 unset color_prompt force_color_prompt
 
-#if command -v tmux>/dev/null; then
-  #[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux -2
-#fi
-
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -106,11 +102,18 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-TERM=xterm-256color
-
-export PATH=/home/david/bin/Sencha/Cmd/5.0.2.270:$PATH
-
-export SENCHA_CMD_3_0_0="/home/david/bin/Sencha/Cmd/5.0.2.270"
+export TERM=screen-256color-bce
 
 # Sets the Mail Environment Variable
 MAIL=/var/spool/mail/david && export MAIL
+
+# Added by Canopy installer on 2014-12-16
+# VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
+VIRTUAL_ENV_DISABLE_PROMPT=1 source /home/dheath6/Enthought/Canopy_64bit/User/bin/activate
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/Workspace/development/test/conform:$PATH"
+export PATH="$HOME/Workspace/development/test/conform/utilities/cmake_reflect:$PATH"
+export EDITOR=vim
+
+set -o vi

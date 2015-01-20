@@ -1,0 +1,8 @@
+name: conform
+root: ~/Workspace/development/test/conform
+windows:
+  - default:
+      layout: 7e4b,239x78,0,0{69x78,0,0,0,169x78,70,0,2}
+      panes:
+        - clear
+        - vim

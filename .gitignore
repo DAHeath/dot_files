@@ -1,12 +1,1 @@
-*
-!.vimrc
-!.bashrc
-!.zshrc
-!.tmux.conf
-!.tmux.reset.conf
-!my_bureau.zsh-theme
-!make_links
-
-!.gitignore
-!README.markdown
-
+.oh-my-zsh/cache
